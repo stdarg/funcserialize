@@ -1,6 +1,6 @@
 {
   "name": "funcserialize",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An easy way to serialize a function into an object and deserialize the object back into a facunction.",
   "main": "index.js",
   "scripts": {

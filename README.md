@@ -5,39 +5,39 @@ A module to take a function and convert it into an object. And then, with the
 same object, convert it back into a function. The object is suitable for
 conversion to JSON via `JSON.stringify`.
 
-# Installation
+## Installation
 
-    npm install funcserialize
+    $ npm install funcserialize
 
-# API
+## API
 
-## toObj(func)
+### toObj(func)
 
 Given an input, describing a task for a worker, create an object that can be
 serialized to JSON and sent to the worker.
 
-### Params:
+#### Params:
 
 * **Object** *func* A function to be converted into an object.
 
-### Return:
+#### Return:
 
 * **Boolean|Object** False on failure, and a serialized object on success.
 
-## toFunc(obj)
+### toFunc(obj)
 
 Given an object that describes a function, convert the object into a
 function.
 
-### Params:
+#### Params:
 
 * **Object** *obj* The object describing the function.
 
-### Return:
+#### Return:
 
 * **Boolean|Function** False on failure and a function object on success.
 
-# Example
+## Example
 
     function test(a,b,c) {
       console.log('%s+%s=%s',a,b,a+b);
@@ -57,7 +57,7 @@ The output from the above code is:
     1+2=3
     7
 
-# LICENSE
+## LICENSE
 
 The MIT License (MIT)
 

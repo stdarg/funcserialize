@@ -12,7 +12,7 @@ function, you need to:
 2. Parse the argument names and the code from the string representation
 3. Use new function in a closure that returns FUnction.apply(inst, array)
 
-The 2<sub>nd</sub> and 3<sub>rd</sub> steps are a bit tricky, so I created this
+The 2<sup>nd</sup> and 3<sup>rd</sup> steps are a bit tricky, so I created this
 module. If you find yourself in the unusual situation where you need to
 communicate code, this will help.
 

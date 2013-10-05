@@ -60,26 +60,3 @@ exports.toFunc = function (obj) {
   return taskFunc;
 };
 
-/*
-function test(func) {
-  if (!is.func(func))  return false;
-  var str = func.toString();
-  var re = /function\s*(\w*)\s*\((.*)\)\s*{([^\0]*)}/m;
-  var match = re.exec(str);
-  var obj = {};
-  obj.name = match[1];
-  obj.params = match[2].split(',');
-  obj.code = match[3];
-  return obj;
-}
-
-function test2(a,b,c) {
-  console.log('%s+%s=%s',a,b,a+b);
-  return b+c;
-}
-
-var obj = exports.toObj(test2);
-console.log(obj);
-var func = exports.toFunc(obj);
-console.log(func(1,2,4));
-*/

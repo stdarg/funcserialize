@@ -1,6 +1,6 @@
 {
   "name": "funcserialize",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A module to take a function and convert it into an object. And then, with the same object, convert it back into a function. The object is suitable for conversion to JSON via `JSON.stringify`.",
   "main": "index.js",
   "scripts": {

@@ -5,12 +5,12 @@ A module to take a function and convert it into an object. And then, with the
 same object, convert it back into a function. The object is suitable for
 conversion to JSON via `JSON.stringify`.
 
-Why? Until we have Function.toSource(), to serialize and then deserialize a
+Why? Until we have `Function.toSource`, to serialize and then deserialize a
 function, you need to:
 
-1. Create a String representation with function.toString()
+1. Create a String representation with `Function.toString`
 2. Parse the argument names and the code from the string representation
-3. Use new function in a closure that returns Function.apply(inst, array)
+3. Use new function in a closure that returns `Function.apply(inst, array)`
 
 The 2<sup>nd</sup> and 3<sup>rd</sup> steps are a bit tricky, so I created this
 module. If you find yourself in the unusual situation where you need to

@@ -8,6 +8,7 @@
 var is = require('is2');
 var debug = require('debug')('func-serialize');
 var util = require('util');
+var setFuncName = require('function-name');
 
 /**
  * Given an input, describing a task for a worker, create an object that can be
@@ -57,6 +58,11 @@ exports.toFunc = function (obj) {
 
   params.push(obj.code);
   var taskFunc = construct(Function, params);
+
+  // set the name
+  if (is.nonEmptyStr(obj.name))
+    setFuncName(taskFunc, obj.name);
+
   return taskFunc;
 };
 

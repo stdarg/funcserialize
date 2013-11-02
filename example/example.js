@@ -2,10 +2,11 @@
 
 function test(a,b,c) {
   console.log('%s+%s=%s',a,b,a+b);
+  console.trace();
   return a+b+c;
 }
 
-var funcserialize = require('./index');
+var funcserialize = require('../index');
 var obj = funcserialize.toObj(test);
 console.log(JSON.stringify(obj));
 var func = funcserialize.toFunc(obj);

@@ -1,7 +1,7 @@
 'use strict';
 var assert = require('assert');
 var is = require('is2');
-var funcserialize = require('../index');
+var funcserialize = require('./index');
 
 describe('toObj', function() {
   it('Should serialize a function into an object.', function() {
